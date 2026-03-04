@@ -10,7 +10,7 @@ from datetime import datetime
 # HTTP Session
 # --------------------------
 session = requests.Session()
-session.auth = HTTPBasicAuth("weeyap@micron.com", "ATATT3xFfGF0kHi-lHGOXNLSShgiSkexu2wiG610kWpPqADZw0bGVHAq3ye6TaxxZ1w-NLzCHHaM_hHIkPfsQhct0D64CyQUmDB_ufIZxmfaeMDMqiGKOWyuSDolbwjuLjoSnr_keDGU4eZK3jPQOVYA4KSnY8tPvqTKE1nenv1RJgUkkTRmUac=5F189EFB")
+session.auth = HTTPBasicAuth("email", "token")
 session.headers.update({
     "Accept": "application/json",
     "Content-Type": "application/json"
@@ -207,4 +207,5 @@ def main():
         print(f"Error processing TSTPG sheet: {e}")
 
 if __name__ == "__main__":
+
     main()
